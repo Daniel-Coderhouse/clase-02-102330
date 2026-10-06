@@ -1,0 +1,48 @@
+JSX
+JS extension
+
+Para devolver mas de un elemento jsx, debo usar un div o bien un fragment <></>
+Para interpolar codigo de js en el jsx debo usar {}
+Si yo necesito en el jsx utilizar un bloque if, un for, recorrer un array con un map,
+o hacer cualquier operacin de js, debo hacerlo entre llaves {}
+
+Para styling usamos la palabra reservada className, en vez de class
+
+PROPS
+
+Las props son propiedades que podemos utilzar pasando a nuestros componentes para 
+que reaccionen y muestren una version distinta (pasando distintos textos, numbers, funcionest, etc)
+
+strings
+numbers
+booleans
+functions
+objects
+arrays
+
+<MyComponent propString="Esto es una string"/>
+
+<MyComponent propNoString={false} />
+
+<MyComponent propNoString={[]} />
+
+STATE: 
+
+ Cada vez que actualizamos el state, el componente se va a re / renderizar
+
+ useState
+
+ hook? un gancho 
+
+ los hook se inicializan siempre dentro del componente
+ no se pueden utilzar en ciclos for o en clausulas de tipo if/else
+
+ import { useState } from "react";
+
+ const MyComponent = () => {
+    // EL HOOK SIEMPRE VA ACA ADENTRO
+    const [estado, setEstado] = useState(2)
+    const [player, setPlayer] = useState("Lionel Messi")
+ }
+
+ 
